@@ -3,6 +3,7 @@
 @import url(font-awesome.min.css);
 @import url(bootstrap.min.css);
 @import url("https://fonts.googleapis.com/css?family=Anton|Lobster");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 header {
   width: 100%;
   border-bottom: 1px solid #cccccc; }
