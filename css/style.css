@@ -32,7 +32,7 @@ header {
         display: block;
         padding: 20px 20px;
         text-decoration: none;
-        transition: border .5s ease-in-out; }
+        transition: all .5s ease-in-out; }
         header .nav-header .navbar li a span {
           font-size: 20px;
           display: block;
