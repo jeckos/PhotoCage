@@ -57,7 +57,10 @@ header {
     #download .download-form div {
       text-align: left;
       display: inline-block;
-      padding: 0 10px; }
+      padding: 0 10px;
+      padding-top: 2px;
+      font-weight: 700;
+      color: #ccc; }
     #download .download-form form {
       float: right; }
       #download .download-form form input {
@@ -68,7 +71,10 @@ header {
         padding: 5px 10px;
         color: #fff;
         border-radius: 3px;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: all 0.3s; }
+        #download .download-form form label[for="upload"]:hover {
+          background: #2d2d2d; }
   #download button {
     padding: 2px 30px 5px 30px;
     font-size: 24px;
@@ -83,7 +89,6 @@ header {
     background: linear-gradient(to bottom, #ffa400 0%, #ff6600 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa400', endColorstr='#ff6600', GradientType=0);
-    /* IE6-9 */
     border-radius: 5px;
     margin-bottom: -5px;
     color: #fff;
@@ -211,8 +216,8 @@ footer {
 
 @font-face {
   font-family: "Helvetica";
-  src: url("../fonts/Helvetica/HelveticaRegular/HelveticalRegular.eot");
-  src: url("../fonts/Helvetica/HelveticaRegular/HelveticalRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/HelveticaRegular/HelveticalRegular.woff") format("woff"), url("../fonts/Helvetica/HelveticaRegular/HelveticalRegular.ttf") format("truetype"), url("../fonts/Helvetica/HelveticaRegular/HelveticalRegular.svg#@{font-name}") format("svg");
+  src: url("../fonts/Helvetica/HelveticaRegular/HelveticaRegular.eot");
+  src: url("../fonts/Helvetica/HelveticaRegular/HelveticaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/HelveticaRegular/HelveticaRegular.woff") format("woff"), url("../fonts/Helvetica/HelveticaRegular/HelveticaRegular.ttf") format("truetype"), url("../fonts/Helvetica/HelveticaRegular/HelveticaRegular.svg#@{font-name}") format("svg");
   font-weight: 400;
   font-style: normal; }
 
