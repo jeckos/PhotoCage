@@ -1,0 +1,235 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(font-awesome.min.css);
+@import url(bootstrap.min.css);
+@import url("https://fonts.googleapis.com/css?family=Anton|Lobster");
+header {
+  width: 100%;
+  border-bottom: 1px solid #cccccc; }
+  header .logo-header {
+    float: left;
+    font-family: "Lobster";
+    font-size: 49px;
+    padding: 10px; }
+    header .logo-header a {
+      text-decoration: none;
+      color: #676666; }
+      header .logo-header a span {
+        color: #ff7700; }
+  header .nav-header {
+    float: right; }
+    header .nav-header .navbar li {
+      display: inline-block;
+      border-right: 1px solid #cccccc;
+      margin-left: -4.5px; }
+      header .nav-header .navbar li:last-child {
+        border-right: none; }
+      header .nav-header .navbar li a {
+        font-family: "Helvetica";
+        color: #565555;
+        text-align: center;
+        display: block;
+        padding: 20px 20px;
+        text-decoration: none;
+        transition: border .5s ease-in-out; }
+        header .nav-header .navbar li a span {
+          font-size: 20px;
+          display: block;
+          margin-bottom: 5px; }
+        header .nav-header .navbar li a:hover {
+          color: #ff7700;
+          border-bottom: 5px solid #ff7700;
+          margin-bottom: 0px;
+          padding-bottom: 15px; }
+
+#download {
+  text-align: center; }
+  #download .download-form {
+    display: inline-block;
+    margin: 0 auto;
+    width: 450px;
+    border: 1px solid #ccc;
+    padding: 8px 5px;
+    border-radius: 3px;
+    text-align: left; }
+    #download .download-form div {
+      text-align: left;
+      display: inline-block;
+      padding: 0 10px; }
+    #download .download-form form {
+      float: right; }
+      #download .download-form form input {
+        display: none; }
+      #download .download-form form label[for="upload"] {
+        font-size: 18px;
+        background: #c1bfbf;
+        padding: 5px 10px;
+        color: #fff;
+        border-radius: 3px;
+        cursor: pointer; }
+  #download button {
+    padding: 2px 30px 5px 30px;
+    font-size: 24px;
+    border: none;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa400+0,ff6600+100 */
+    background: #ffa400;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ffa400 0%, #ff6600 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffa400 0%, #ff6600 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffa400 0%, #ff6600 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa400', endColorstr='#ff6600', GradientType=0);
+    /* IE6-9 */
+    border-radius: 5px;
+    margin-bottom: -5px;
+    color: #fff;
+    margin-left: 15px; }
+
+#gallery-photo {
+  margin-top: 75px; }
+  #gallery-photo .wrapper {
+    margin-bottom: 30px;
+    border-radius: 3px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.17);
+    padding: 8px 8px 15px 8px;
+    transition: all 1s ease-in-out; }
+    #gallery-photo .wrapper .photo-wrapper {
+      width: 100%;
+      position: relative;
+      transition: all 1s ease-in-out; }
+      #gallery-photo .wrapper .photo-wrapper .date-publish {
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+        color: #fff;
+        font-weight: 700;
+        z-index: 2; }
+      #gallery-photo .wrapper .photo-wrapper .zoom {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+        top: 0;
+        background: rgba(177, 174, 174, 0.5);
+        font-size: 50px;
+        color: #fff;
+        opacity: 0;
+        transition: all 0.5s ease-in-out; }
+        #gallery-photo .wrapper .photo-wrapper .zoom i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateY(-50%) translateX(-50%); }
+      #gallery-photo .wrapper .photo-wrapper img {
+        width: 100%; }
+      #gallery-photo .wrapper .photo-wrapper:hover .zoom {
+        z-index: 1;
+        opacity: 1; }
+    #gallery-photo .wrapper .descript {
+      padding: 10px 0 7px 0;
+      border-bottom: 1px solid #ccc;
+      font-family: "Helvetica";
+      font-weight: 700;
+      font-size: 16px;
+      color: #b1aeae; }
+      #gallery-photo .wrapper .descript p {
+        float: left;
+        padding: 0 10px; }
+      #gallery-photo .wrapper .descript .favorite {
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        background: #b1aeae;
+        float: right;
+        font-size: 12px;
+        color: #fff;
+        padding: 2px;
+        border-radius: 50%;
+        display: block;
+        transition: background .5s ease-in-out; }
+        #gallery-photo .wrapper .descript .favorite:hover {
+          background: #ff7700; }
+    #gallery-photo .wrapper .share {
+      text-align: right;
+      padding: 10px 0 0 0;
+      padding-bottom: 0;
+      font-family: "Helvetica";
+      font-weight: 700;
+      font-size: 20px;
+      color: #b1aeae; }
+      #gallery-photo .wrapper .share p {
+        display: inline-block; }
+      #gallery-photo .wrapper .share ul {
+        float: right;
+        margin-left: 10px; }
+        #gallery-photo .wrapper .share ul li {
+          display: inline-block; }
+          #gallery-photo .wrapper .share ul li a {
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            background: #b1aeae;
+            float: right;
+            font-size: 16px;
+            color: #fff;
+            padding: 5px;
+            border-radius: 50%;
+            display: block;
+            transition: background .5s ease-in-out; }
+            #gallery-photo .wrapper .share ul li a:last-child {
+              padding-left: 4px; }
+          #gallery-photo .wrapper .share ul li .vk:hover {
+            background: #466a94; }
+          #gallery-photo .wrapper .share ul li .facebook:hover {
+            background: #29487d; }
+          #gallery-photo .wrapper .share ul li .twitter:hover {
+            background: #1da1f2; }
+
+footer {
+  padding: 30px 0 50px 0;
+  text-align: right; }
+
+/* |...\КОНЕЦ ОСНОВНЫХ СТИЛЕЙ/..|
+
+===================================
+
+   |...\ПОДКЛЮЧЕНИЕ ШРИФТОВ/..|*/
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica/HelveticaBold/HelveticaBold.eot");
+  src: url("../fonts/Helvetica/HelveticaBold/HelveticaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/HelveticaBold/HelveticaBold.woff") format("woff"), url("../fonts/Helvetica/HelveticaBold/HelveticaBold.ttf") format("truetype"), url("../fonts/Helvetica/HelveticaBold/HelveticaBold.svg#@{font-name}") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica/HelveticaRegular/HelveticalRegular.eot");
+  src: url("../fonts/Helvetica/HelveticaRegular/HelveticalRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/HelveticaRegular/HelveticalRegular.woff") format("woff"), url("../fonts/Helvetica/HelveticaRegular/HelveticalRegular.ttf") format("truetype"), url("../fonts/Helvetica/HelveticaRegular/HelveticalRegular.svg#@{font-name}") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "BAUHS93";
+  src: url("../fonts/BAUHS93/BAUHS93/BAUHS93.eot");
+  src: url("../fonts/BAUHS93/BAUHS93/BAUHS93.eot?#iefix") format("embedded-opentype"), url("../fonts/BAUHS93/BAUHS93/BAUHS93.woff") format("woff"), url("../fonts/BAUHS93/BAUHS93/BAUHS93.ttf") format("truetype"), url("../fonts/BAUHS93/BAUHS93/BAUHS93.svg#@{font-name}") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+body {
+  background-color: #ffffff;
+  font-family: "Helvetica";
+  font-size: 16px;
+  color: #565555; }
+
+/*
+──██─███─████─█──█─████─███─────█─███
+───█─█───█──█─█─█──█──█─█──────██───█
+───█─███─█────██───█──█─███─────█─███
+█──█─█───█──█─█─█──█──█───█─────█───█
+████─███─████─█──█─████─███════██─███
+*/
